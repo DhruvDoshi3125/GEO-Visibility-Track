@@ -33,21 +33,20 @@ cd backend
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env          # Add your API keys
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
 ```
 
 ### Frontend
 ```bash
 cd frontend
 npm install
-cp .env.example .env          # Add VITE_API_URL
 npm run dev
 ```
 
 Open http://localhost:5173
 
 ## Environment Variables
+Create .env file as per the below mentioned instructions.
 
 ### backend/.env
 ```
